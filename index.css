@@ -78,6 +78,14 @@ body {
   padding-top: 40px;
 }
 
+.contactList {
+  font-size: 16px;
+}
+
+.contactList .text {
+  cursor: pointer;
+}
+
 .title {
   color: #fff;
   text-transform: uppercase;
@@ -94,7 +102,6 @@ body {
   position: relative;
   list-style: none;
   margin: 10px 0;
-  cursor: pointer;
 }
 
 .contactInfo ul li .icon {
@@ -109,6 +116,10 @@ body {
   font-weight: 300;
 }
 
+.contactInfo ul li a {
+  text-decoration: none;
+}
+
 .contactInfo.education li {
   margin-bottom: 15px;
 }
@@ -116,6 +127,16 @@ body {
 .contactInfo.education h5 {
   color: #03a9f4;
   font-weight: 500;
+}
+
+.contactInfo.certification h5 {
+  color: #03a9f4;
+  font-weight: 500;
+}
+
+.contactInfo.certification h4 {
+  color: #fff;
+  font-weight: 300;
 }
 
 .contactInfo.education h4:nth-child(2) {
@@ -170,6 +191,10 @@ body {
 
 .text {
   margin-bottom: 20px;
+}
+
+.text a {
+  text-decoration: none;
 }
 
 .text span {
