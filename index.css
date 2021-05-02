@@ -168,6 +168,24 @@ body {
   margin-bottom: 10px;
 }
 
+.text {
+  margin-bottom: 20px;
+}
+
+.text span {
+  text-transform: uppercase;
+  color: #c71585;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.text h4 {
+  text-transform: uppercase;
+  color: #2a7da2;
+  font-size: 16px;
+}
+
 p {
   color: #333;
 }
@@ -219,6 +237,13 @@ p {
   color: #333;
   font-weight: 500;
   margin: 10px 0;
+}
+
+.skills .box ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
 }
 
 @media (max-width: 1000px) {
