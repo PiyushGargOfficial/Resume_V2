@@ -8,29 +8,11 @@
 }
 
 body {
-  background: lightblue;
+  background: linear-gradient(to right top, #65dfc9, #6cdbeb);
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-}
-
-.container {
-  position: relative;
-  width: 100%;
-  max-width: 1000px;
-  min-height: 1000px;
-  margin: 50px;
-  background: #fff;
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
-}
-
-.container .left_Side {
-  position: relative;
-  background: #003147;
-  padding: 40px;
 }
 
 .profileText {
@@ -168,10 +150,75 @@ body {
   font-weight: 300;
 }
 
+/*Right Side*/
+
+/*Glassmorphism */
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  min-height: 1000px;
+  margin: 50px;
+  /* background: #fff; */
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  /* box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1); */
+}
+
+.container .left_Side {
+  position: relative;
+  background: #003147;
+  padding: 40px;
+  backdrop-filter: blur(2rem);
+  background: linear-gradient(
+    to right bottom,
+    rgba(0, 49, 71, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+  border-radius: 20px 0 0 20px;
+}
+
 .container .right_Side {
   position: relative;
   background: #fff;
   padding: 40px;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+  border-radius: 0 20px 20px 0;
+  backdrop-filter: blur(2rem);
+}
+
+.circle1,
+.circle2,
+.circle3 {
+  background: #fff;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.9),
+    rgba(255, 255, 255, 0.1)
+  );
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.circle1 {
+  top: 5%;
+  right: 15%;
+}
+
+.circle2 {
+  bottom: -20%;
+  left: 10%;
+}
+
+.circle3 {
+  bottom: -100%;
+  right: 10%;
 }
 
 .about {
